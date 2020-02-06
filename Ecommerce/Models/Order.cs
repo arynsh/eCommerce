@@ -10,16 +10,21 @@ namespace Ecommerce.Models
         public int Total { get; set; }
         public DateTime Date { get; set; }
         public bool Completed { get; set; }
-
-        public virtual ICollection<OrderProduct> Cart { get; set; }
+        public virtual ICollection<Product> Products { get; set; }
         public Order()
         {
-            this.Cart = new HashSet<OrderProduct>();
+            this.Products = new HashSet<Product>();
         }
 
-        public void AddProduct(OrderProduct newOrderProduct)
-        {
-            this.Cart.Add(newOrderProduct);
-        }
+        // public virtual ICollection<OrderProduct> Cart { get; set; }
+        // public Order()
+        // {
+        //     this.Cart = new HashSet<OrderProduct>();
+        // }
+
+        // public void AddProduct(OrderProduct newOrderProduct)
+        // {
+        //     this.Cart.Add(newOrderProduct);
+        // }
     }
 }

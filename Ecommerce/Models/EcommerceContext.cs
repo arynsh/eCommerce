@@ -7,7 +7,7 @@ namespace Ecommerce.Models
     {
         public virtual DbSet<Product> Products {get;set;}
         public DbSet<Order> Orders {get;set;}
-        public DbSet<OrderProduct> OrderProduct { get; set; }
+                                        
         public EcommerceContext(DbContextOptions options) : base(options)
         {
 

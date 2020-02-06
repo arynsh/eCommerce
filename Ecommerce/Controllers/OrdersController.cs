@@ -16,6 +16,13 @@ namespace Ecommerce.Controllers
       _db = db;
     }
 
+    // [HttpGet]
+    // public ActionResult Checkout(int OrderId)
+    // {
+    //   var listOfProduct = _db.Orders.Include(join => join.OrderId == orderId);
+    //   return View(listOfProduct)                              
+    // }
+
     // [HttpPost]
     // public ActionResult Create(Product newProduct)
     // {
